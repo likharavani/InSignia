@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color:white;
+}
+.light-color{
+    color:cyan;
+}
+a{
+    color:white;
+}
+.btn-common{
+   color:cyan;
+   border-radius: 19px;
+   background-color: rgb(20, 20, 20);
+   padding-left: 1rem;
+   padding-right: 1rem;
+   box-shadow: rgba(138, 138, 138, 0.3) 0px 1px 2px 0px, rgba(216, 216, 216, 0.15) 0px 2px 6px 2px;
+}
+.btn-common:hover{
+    color:darkcyan;
+}
+.landing{
+    position: relative;  
+}
+.mt-5 > h1{
+    font-size: 3.3rem;
+    color:cyan;
+}
+.mt-5 > p{
+    font-size: 1.2rem;
+}
+.shadow1{
+    border-radius: 15px;
+    box-shadow: rgb(29, 29, 29) 3px 3px 6px 3px inset, rgba(41, 41, 41, 0.5) -3px -3px 6px 3px inset;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li>a:hover{
+    color:darkcyan;
+}
+.iconstyle{
+    padding:0.5rem 0.9rem;
+    margin-right: 0.4rem;
+   color:white;
+    box-shadow: rgb(29, 29, 29) 3px 3px 6px 3px inset, rgba(41, 41, 41, 0.5) -3px -3px 6px 3px inset;
+    border-radius: 50%;
+}
+.mobile{
+    overflow: visible;
+    position: relative;
+}
+.mobile::after{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    width:50%;
+    height:160%;
+    margin-top:-6rem;
+    
+    overflow: visible;
+    background: url('Phone\ 1\ \(2\).png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+@media screen  and (max-width:555px) {
+    .mobile::after{
+        display: none;
+    }
+    .d-flex{
+        flex-direction: column !important;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+        padding-left: 1rem;
+    }
+    .mt-5>h1{
+        font-size: 2.5rem;
+    }
+    .mt-5>p{
+        font-size: 1rem;
+    }
+    .w-75{
+        width:88% !important; 
+    }
+}
+.navbar-toggler{
+   
+color:black;
+border-color: white !important;
+}
+.navbar-toggler-icon{
+    color: rgb(17, 17, 17) !important;;
+}
